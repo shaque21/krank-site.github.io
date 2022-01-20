@@ -125,6 +125,10 @@ html{
 .dropdown-toggle::after{
     display: none;
 }
+/* .menu-list .navbar-nav .nav-item .active{
+    background-color: #c12121;
+    color: #fff !important;
+} */
 .menu-list .navbar-nav .nav-item .nav-link{
     color: #1E272E !important;
     font-weight: 500;
@@ -353,7 +357,7 @@ html{
 }
 #products .view-all{
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     align-items: center;
     transition: all 0.3s linear;
@@ -379,7 +383,7 @@ html{
 }
 #products .view-all:hover{
     color: #c12121;
-    font-weight: bold;
+    font-weight: 600;
 }
 #products .view-all:hover:before{
     color: #c12121;
@@ -391,3 +395,33 @@ html{
     font-size: 0.8rem;
 }
 /* end offer product css section */
+
+/* footer css section */
+.footer-section{
+    background-color: rgba(30, 39, 46, 0.05);
+}
+.footer-section .terms-link a{
+    color: #282828;
+    font-size: 00.9375rem;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    transition: all 0.4s linear;
+}
+.footer-section .terms-link a:hover{
+    color: #c12121;
+}
+.footer-section .social-icon a{
+    color: #c12121;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 1.2rem;
+    transition: all 0.3s linear;
+}
+.footer-section .social-icon a:hover{
+    transform: translateY(-8px);
+}
+.footer-section .footer-bottom p{
+    font-size: 0.875rem;
+    color: #282828;
+    font-weight: 500;
+}

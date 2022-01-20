@@ -13,8 +13,21 @@
         border-color: #1E272E;
     }
 }
+@media screen and (max-width: 576px) {
+    /* #products .card{
+        width: 90% !important;
+    }
+    #products .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+}
 @media screen and (max-width: 480px) {
     html{
        font-size: 80% !important; 
+    }
+    .footer-section .terms-link a{
+        margin: 0 0.75rem;
     }
 }
