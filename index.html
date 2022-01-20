@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krank Ecommerce Site</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="./images/Logo/For post full sleeve LZ.png">
+    <!-- bootstarp file -->
+    <link rel="stylesheet" href="./bootstarp/bootstrap.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- basic css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- header and menu section -->
+    <section id="header" class="container-fluid bg-white fixed-top py-md-3 py-4">
+        <div class="container">
+            <!-- Upper search box and logo -->
+            <div class="logo-section row py-2 bg-white">
+                <div class="logo col-3 d-flex align-items-center">
+                    <div class="logo-fit">
+                        <a href="index.html">
+                            <img src="./images/Logo/black_krank.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="search-btn col-6">
+                    <form class="search-icon">
+                        <input class="form-control form-control-sm  custom-search" placeholder="Search for Products" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+                <div class="shopping-icon col-3 d-flex justify-content-end align-items-center">
+                    <div class="fav mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="shop mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="#">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                    <div class="user mx-sm-2 mx-2">
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Menu items -->
+            <div class="menu-section row py-2 py-sm-2 py-md-2 white">
+                <div class="col-5 col-sm-4 col-md-3 p-0 m-0 category-bar">
+                    <div class="dropdown">
+                        <button class="btn category-btn dropdown-toggle d-flex justify-content-between align-items-center px-1 px-sm-3"
+                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false" onclick="changeBarIcon(this);">
+                            <i class="fas fa-bars"></i>
+                            All Categories
+                            <i class="fas fa-angle-down me-2"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Full Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Half Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Flag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-7 col-sm-8 col-md-9 p-0 m-0 menu-list d-flex justify-content-end align-items-center">
+                    <nav class="navbar nav-menu navbar-expand-lg navbar-light bg-menu-color d-flex justify-content-end align-items-center p-md-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#all-menu-item" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-bars" data-bs-toggle="collapse"
+                            data-bs-target="#all-menu-item" onclick="changeIcon(this)"
+                            ></i>
+                        </span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse ps-3 ps-sm-3 ps-md-3" id="all-menu-item">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Offer Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Feature Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Official Marches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Track Order</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner section -->
+    <div id="banner" class="container-fluid banner-section p-3 mt-5">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active indicator-shape" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="indicator-shape" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="indicator-shape" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-6 banner-content mt-5">
+                        <div class="title">
+                            <h4>Iron Maiden</h4>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            </p>
+                        </div>
+                        <div class="content-btn me-5 mt-5">
+                            <a class="shopNow-btn" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 banner-image d-flex justify-content-center align-items-center">
+                        <div class="image">
+                        <img src="images/banner/iron maiden senjutsu.png" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 banner-content mt-5">
+                    <div class="title">
+                      <h4>Iron Maiden</h4>
+                    </div>
+                    <div class="description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                      </p>
+                    </div>
+                    <div class="content-btn me-5 mt-5">
+                        <a class="shopNow-btn" href="#">Shop Now</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 banner-image d-flex justify-content-center align-items-center">
+                    <div class="image">
+                      <img src="images/banner/iron maiden senjutsu.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 banner-content mt-5">
+                    <div class="title">
+                      <h4>Iron Maiden</h4>
+                    </div>
+                    <div class="description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                      </p>
+                    </div>
+                    <div class="content-btn me-5 mt-5">
+                        <a class="shopNow-btn" href="#">Shop Now</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 banner-image d-flex justify-content-center align-items-center">
+                    <div class="image">
+                      <img src="images/banner/iron maiden senjutsu.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <!-- end header section -->
+
+    <!-- Offer Products -->
+
+    <section id="offer-products" class="container-fluid offer-products-section py-5 bg-primary">
+
+    </section>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./bootstarp/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
