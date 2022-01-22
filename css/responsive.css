@@ -18,6 +18,11 @@
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
     }
+    .cart-section .place-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 576px) {
     #product-details .product-content-section .size-btn-div{
