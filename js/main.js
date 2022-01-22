@@ -26,4 +26,24 @@ changeIcon = function(icon){
     bgMenuColor.classList.add('bg-light');
 }
 
+// product details page
+
+// change image section
+    let bigImg = document.querySelector('.big-img img');
+    function showImg(pic) {
+        bigImg.src = pic;
+    }
+
+    
+// // exzoom js start
+$(function(){
+    $(".zoom-img").imagezoomsl({
+        cursorshadecolor:'#fff',
+        statusdivbackground:'#C0C0C0',
+        textdnbackground:'#fff',
+    });
+});
+// end product details page
+
+
 

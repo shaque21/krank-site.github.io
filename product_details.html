@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krank Ecommerce Site</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="./images/Logo/For post full sleeve LZ.png">
+    <!-- bootstarp file -->
+    <link rel="stylesheet" href="./bootstarp/bootstrap.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- basic css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- offer products css file -->
+    <link rel="stylesheet" href="./css/offer_product.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- header and menu section -->
+    <section id="header" class="container-fluid bg-white fixed-top py-md-3 py-4">
+        <div class="container">
+            <!-- Upper search box and logo -->
+            <div class="logo-section row py-2 bg-white">
+                <div class="logo col-3 d-flex align-items-center">
+                    <div class="logo-fit">
+                        <a href="index.html">
+                            <img src="./images/Logo/black_krank.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="search-btn col-6">
+                    <form class="search-icon">
+                        <input class="form-control form-control-sm  custom-search" placeholder="Search for Products" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+                <div class="shopping-icon col-3 d-flex justify-content-end align-items-center">
+                    <div class="fav mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="shop mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="#">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                    <div class="user mx-sm-2 mx-2">
+                        <a href="#">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Menu items -->
+            <div class="menu-section row py-2 py-sm-2 py-md-2 white">
+                <div class="col-5 col-sm-4 col-md-3 p-0 m-0 category-bar">
+                    <div class="dropdown">
+                        <button class="btn category-btn dropdown-toggle d-flex justify-content-between align-items-center px-1 px-sm-3"
+                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false" onclick="changeBarIcon(this);">
+                            <i class="fas fa-bars"></i>
+                            All Categories
+                            <i class="fas fa-angle-down me-2"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Full Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Half Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Flag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-7 col-sm-8 col-md-9 p-0 m-0 menu-list d-flex justify-content-end align-items-center">
+                    <nav class="navbar nav-menu navbar-expand-lg navbar-light bg-menu-color d-flex justify-content-end align-items-center p-md-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#all-menu-item" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-bars" data-bs-toggle="collapse"
+                            data-bs-target="#all-menu-item" onclick="changeIcon(this)"
+                            ></i>
+                        </span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse ps-3 ps-sm-3 ps-md-3" id="all-menu-item">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="offer_products.html">Offer Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Feature Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Official Marches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Track Order</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header section -->
+
+    <!-- banner section -->
+    <section id="banner" class="container-fluid container-fluid banner-section py-3">
+        <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="menu-title">Black Sabbath</h2>
+            <p class="menu-link">Home &nbsp;
+                <span><i class="fas fa-angle-right"></i></span>
+                &nbsp; Half Sleeve Tee
+                <span><i class="fas fa-angle-right"></i></span>
+                &nbsp; Black Sabbath 
+            </p>
+        </div>
+    </section>
+    <!-- end banner section -->
+
+    <!-- product details section -->
+    <section id="product-details" class="container-fluid bg-white container-fluid product-details-section my-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 product-img-section">
+                    <div class="row">
+                        <div class="col-12 big-img">
+                            <img class="zoom-img" src="./images/products/ac dc man.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-3 p-1">
+                            <div class="small-img">
+                                <img src="./images/products/black sabbath.png" onclick="showImg(this.src)">
+                            </div>
+                        </div>
+                        <div class="col-3 p-1">
+                            <div class="small-img">
+                                <img src="./images/products/ac dc man.png" onclick="showImg(this.src)">
+                            </div>
+                        </div>
+                        <div class="col-3 p-1">
+                            <div class="small-img">
+                                <img src="./images/products/black sabbath.png" onclick="showImg(this.src)">
+                            </div>
+                        </div>
+                        <div class="col-3 p-1">
+                            <div class="small-img">
+                                <img src="./images/products/ac dc man.png" onclick="showImg(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-8 product-content-section">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="category">Half Sleeve Tee</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="title">Black Sabbath</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 ps-0">
+                                    <div class="review-section">
+                                        <a href="" class="btn review-btn">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(164 reviews)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="price">$150</h4>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-8">
+                                    <p class="variation">Product Variation</p>
+                                    <div class="size-btn-div d-flex">
+                                        <div class="size-btn mx-2">S | Black</div>
+                                        <div class="size-btn mx-2">M | Black</div>
+                                        <div class="size-btn mx-2">L | Black</div>
+                                        <div class="size-btn mx-2">XL | Black</div>
+                                        <div class="size-btn mx-2">XXL | Black</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end product details section -->
+
+    <!-- Offer Products -->
+
+    <section id="products" class="container-fluid products-section py-5 bg-white">
+        <div class="container">
+            <div class="row d-flex flex-wrap">
+                <h2 class="products-title">Related Product</h2>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="offer-par">
+                                -40%
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="wishIcon">
+                                    <i class="fas fa-heart active"></i>
+                                </div>
+                                <img src="images/products/ac dc man.png" class="card-img-top" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                          <h5 class="card-title">AC DC</h5>
+                          <p><span class="text-decoration-line-through text-muted">$250</span>
+                            <span class="real-price">$150</span>
+                          </p>
+                          <div class="addBtnDiv">
+                              <a href="#" class="addToCart-btn">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                Add To Cart
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="offer-par">
+                                -40%
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="wishIcon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <img src="images/products/black sabbath.png" class="card-img-top" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                          <h5 class="card-title">Black Sabbath</h5>
+                          <p><span class="text-decoration-line-through text-muted">$250</span>
+                            <span class="real-price">$150</span>
+                          </p>
+                          <div class="addBtnDiv">
+                              <a href="#" class="addToCart-btn">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                Add To Cart
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="offer-par">
+                                -40%
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="wishIcon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <img src="images/products/bob.png" class="card-img-top" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                          <h5 class="card-title">Bob Marley</h5>
+                          <p><span class="text-decoration-line-through text-muted">$250</span>
+                            <span class="real-price">$150</span>
+                          </p>
+                          <div class="addBtnDiv">
+                              <a href="#" class="addToCart-btn">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                Add To Cart
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="offer-par">
+                                -40%
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="wishIcon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <img src="images/products/dream theate.png" class="card-img-top" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                          <h5 class="card-title">Dream Theather</h5>
+                          <p><span class="text-decoration-line-through text-muted">$250</span>
+                            <span class="real-price">$150</span>
+                          </p>
+                          <div class="addBtnDiv">
+                              <a href="#" class="addToCart-btn">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                Add To Cart
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="offer-par">
+                                -40%
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="wishIcon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <img src="images/products/metallica.png" class="card-img-top" alt="...">
+                            </div>
+                        </a>
+                        <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                          <h5 class="card-title">Metalica</h5>
+                          <p><span class="text-decoration-line-through text-muted">$250</span>
+                            <span class="real-price">$150</span>
+                          </p>
+                          <div class="addBtnDiv">
+                              <a href="#" class="addToCart-btn">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                Add To Cart
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end offer producs -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section container-fluid pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-12 offset-sm-4 d-flex justify-content-center align-items-center py-2">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="./images/Logo/black_krank.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="terms-link col-sm-8 col-12 offset-sm-2 d-flex justify-content-center align-items-center py-2">
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="social-icon col-sm-8 col-12 offset-sm-2 d-flex justify-content-center align-items-center py-2">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <hr class="mt-4 mb-3 col-sm-6 col-12 offset-sm-3 ">
+            </div>
+            <div class="row">
+                <div class="footer-bottom col-sm-4 col-12 offset-sm-4 d-flex justify-content-center align-items-center pb-2">
+                    <p>© 2021 Krank. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer section -->
+    <!-- jquery cdn file -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap js file -->
+    <script src="./bootstarp/bootstrap.bundle.min.js"></script>
+    <!-- zoomsl js file -->
+    <script src="./plugin/js/zoomsl.min.js"></script>
+    <!-- custom js file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

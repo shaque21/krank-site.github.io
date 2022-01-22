@@ -231,6 +231,19 @@ html{
     color: #c12121;
     background-color: rgba(30, 39, 46, 0.05);
 }
+/* offer product css */
+.banner-section .menu-title{
+    font-weight: bold;
+    color: #1E272E;
+    font-size: 1.5rem;
+
+}
+.banner-section .menu-link{
+    font-weight: 500;
+    color: #1E272E;
+    font-size: 0.875rem; 
+}
+/* offer products css */
 /* end banner css part */
 
 /* start offer product css section */
@@ -424,4 +437,65 @@ html{
     font-size: 0.875rem;
     color: #282828;
     font-weight: 500;
+}
+/* end footer css */
+/* start product details section */
+
+#product-details .product-img-section .big-img{
+    height: 18.75rem;
+    width: 100%;
+    background-color: rgba(30, 39, 46, 0.05);
+    /* border: 2px solid #1E272E; */
+    overflow: hidden;
+}
+#product-details .product-img-section .big-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#product-details .product-img-section .small-img{
+    height: 5rem;
+    /* width: 100%; */
+    /* margin: 0.5rem; */
+    background-color: rgba(30, 39, 46, 0.05);
+    border: 1px solid rgba(30, 39, 46, 0.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product-details .product-img-section .small-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#product-details .product-content-section .category{
+    color: #1E272E;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+#product-details .product-content-section .title{
+    color: #1E272E;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#product-details .product-content-section .review-section{
+    padding-left: 0;
+}
+#product-details .product-content-section .review-section span{
+    color: #1E272E;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+#product-details .product-content-section .price{
+    font-weight: 600;
+    color: #1E272E;
+    font-size: 1rem;
+}
+#product-details .product-content-section .variation{
+    font-weight: 600;
+    color: #1E272E;
+    font-size: 0.875rem; 
 }
