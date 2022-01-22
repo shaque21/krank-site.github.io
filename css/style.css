@@ -440,7 +440,10 @@ html{
 }
 /* end footer css */
 /* start product details section */
-
+/* #product-details .product-content-section .card{
+    padding: 0 !important;
+    border: none !important;
+} */
 #product-details .product-img-section .big-img{
     position: relative;
     height: 18.75rem;
@@ -566,6 +569,7 @@ html{
 #product-details .product-content-section .qty-div .input-group .qty-input{
     border: none;
     width: 2rem;
+    font-size: 0.875rem;
 }
 #product-details .product-content-section .qty-div .input-group .input-group-btn button{
     font-weight: 600;
