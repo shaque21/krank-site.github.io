@@ -442,11 +442,27 @@ html{
 /* start product details section */
 
 #product-details .product-img-section .big-img{
+    position: relative;
     height: 18.75rem;
     width: 100%;
     background-color: rgba(30, 39, 46, 0.05);
     /* border: 2px solid #1E272E; */
     overflow: hidden;
+}
+#product-details .product-img-section .big-img .offer-par{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 1.25rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 00.75rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #1E272E;
+    border-radius: 3px;   
 }
 #product-details .product-img-section .big-img img{
     height: 100%;
