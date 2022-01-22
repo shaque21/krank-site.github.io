@@ -3,6 +3,9 @@
         background-color: #fff !important;
         box-shadow: 0px 2px 5px rgba(30, 39, 46, 0.05) ; 
     }
+    #product-details .product-content-section .size-btn-div{
+        font-size: 0.3rem;
+    }
 }
 @media screen and (max-width: 768px) {
     
@@ -12,20 +15,23 @@
     .menu-list .navbar {
         border-color: #1E272E;
     }
+    #product-details .product-content-section .size-btn-div{
+        font-size: 0.3rem;
+    }
 }
 @media screen and (max-width: 576px) {
-    /* #products .card{
-        width: 90% !important;
+    #product-details .product-content-section .size-btn-div{
+        font-size: 0.3rem;
+        justify-content: space-around;
     }
-    #products .item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 }
 @media screen and (max-width: 480px) {
     html{
        font-size: 80% !important; 
+    }
+    #product-details .product-content-section .size-btn-div{
+        font-size: 0.3rem;
+        justify-content: space-around;
     }
     .footer-section .terms-link a{
         margin: 0 0.75rem;

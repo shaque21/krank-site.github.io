@@ -43,6 +43,8 @@ $(function(){
         textdnbackground:'#fff',
     });
 });
+
+$('.qty-input').bootstrapNumber();
 // end product details page
 
 

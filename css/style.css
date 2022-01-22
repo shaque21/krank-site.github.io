@@ -499,3 +499,123 @@ html{
     color: #1E272E;
     font-size: 0.875rem; 
 }
+#product-details .product-content-section .size-btn-div .size-btn{
+    font-weight: 500;
+    color: #1E272E;
+    font-size: 0.875rem;
+    padding: 00.25rem 1rem;
+    border: 1px solid rgba(30, 39, 46, 0.2);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#product-details .product-content-section .size-btn-div .size-btn:hover{
+    color: #fff;
+    background-color: #c12121;
+    border: 1px solid #c12121;
+}
+#product-details .product-content-section .size-btn-div .active{
+    color: #fff;
+    background-color: #c12121;
+    border: 1px solid #c12121;
+
+}
+#product-details .product-content-section .qty-div .addToCart-btn{
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 00.35rem 1.1rem;
+    background-color: #c12121;
+    border: 2px solid #c12121;
+    transition: all 0.3s linear;
+}
+#product-details .product-content-section .qty-div .addToCart-btn:hover{
+    color: #c12121;
+    background-color: rgba(30, 39, 46, 0.05);
+    border: 2px solid #c12121;
+}
+#product-details .product-content-section .qty-div .wishIcon{
+    color: #1E272E;
+    border: 1px solid rgba(30, 39, 46, 0.5);
+    padding: 0.35rem 0.5rem;
+    transition: all 0.3s linear;
+}
+#product-details .product-content-section .qty-div .wishIcon:hover{
+    background-color: #c12121;
+    border: 1px solid #c12121;
+    color: #fff; 
+}
+#product-details .product-content-section .qty-div .input-group{
+    border: 1px solid rgba(30, 39, 46, 0.15);
+}
+#product-details .product-content-section .qty-div .input-group .qty-input{
+    border: none;
+    width: 2rem;
+}
+#product-details .product-content-section .qty-div .input-group .input-group-btn button{
+    font-weight: 600;
+    padding: 0.1875rem 0.625rem;
+}
+#product-details .product-content-section .qty-div .input-group .input-group-btn button:focus{
+    box-shadow: none;
+}
+.accordion-collapse {
+    border: 0;
+}
+.accordion-button {
+    padding: 0px;
+    font-weight: bold;
+    border: 0;
+    font-size: 1.125rem;
+    color: #1E272E;
+    text-align: left;
+    /* border-bottom: 1px solid rgba(30, 39, 46, 0.5);  */
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+.accordion-button:not(.collapsed) {
+    background: none;
+    color: #c12121;
+}
+.accordion-body {
+    padding: 1rem;
+    background-color: #fff;
+    color: #1E272E;
+    font-weight: 500;
+    font-size: 00.875rem;
+}
+.accordion-button::after {
+    width: auto;
+    height: auto;
+    content: "+";
+    font-size: 2.5rem;
+    background-image: none;
+    font-weight: 100;
+    color: #1E272E;
+    transform: translateY(-4px);
+}
+.accordion-button:not(.collapsed)::after {
+    width: auto;
+    height: auto;
+    background-image: none;
+    content: "-";
+    font-size: 3rem;
+    transform: translate(-5px, -4px);
+    transform: rotate(0deg);
+}
+
+.accordion-flush .accordion-item .accordion-button{
+    color: #1E272E;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.accordion-flush .accordion-item .accordion-button::after{
+    color: #1E272E;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+.accordion-header{
+    line-height: 3.2;
+} 
+/* product details css end */
