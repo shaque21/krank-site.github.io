@@ -1,0 +1,16 @@
+
+#banner{
+    background-color: rgba(30, 39, 46, 0.05);
+    height: 30vh;
+}
+.banner-section .menu-title{
+    font-weight: bold;
+    color: #1E272E;
+    font-size: 1.5rem;
+
+}
+.banner-section .menu-link{
+    font-weight: 500;
+    color: #1E272E;
+    font-size: 0.875rem; 
+}
