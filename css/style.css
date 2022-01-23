@@ -709,3 +709,94 @@ html{
     border: 1px solid #FF5252;
 }
 /* end cart css file */
+
+/* account setting section */
+.account-section .sidebar .name_email{
+    line-height: 0.5rem;
+}
+.account-section .sidebar .name_email h4{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E272E;
+}
+.account-section .sidebar .name_email p{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(30, 39, 46, 0.5);
+}
+
+.account-section .sidebar .account-setting{
+    border-bottom: 1px solid rgba(30, 39, 46, 0.1);
+
+}
+.account-section .sidebar .account-setting a{
+    color: #1E272E;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+.account-section .sidebar .account-setting a:hover{
+    color: #c12121;
+}
+.account-section .sidebar .account-setting a i{
+    color: #c12121;
+}
+.account-section .address-section .form-section h2{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #1E272E;
+} 
+.account-section .address-section .form-section .save-btn button{
+    padding: 0.35rem 1.5rem;
+    color: #fff;
+    background-color: #c12121;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 1px solid #c12121;
+}
+.account-section .address-section .add-section .head h2{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #1E272E;
+}
+.account-section .address-section .add-section .head .modal-btn{
+    padding: 0.35rem 1.5rem;
+    color: #c12121;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  0px 0px 5px rgba(30, 39, 46, 0.2),
+                -2px -2px 10px #ffffff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 0;  
+}
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    opacity: 1 !important;
+    transform: scale(.85) translateY(-0.2rem) translateX(1rem);
+    background-color: #fff;
+    padding: 0 0.875rem !important;
+}
+.form-floating>.form-control, .form-floating>.form-select {
+    height: calc(1.5rem + 1rem) !important;
+    line-height: 1.25;
+}
+.form-floating>label {
+    height: 60% !important;
+    color: #1E272E;
+    font-size: 0.75rem;
+    font-weight: 600;
+    top: -0.375rem;
+}
+.form-control{
+    color: #1E272E;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    padding: 0.75rem !important;
+    border-radius: 0;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: rgba(30, 39, 46, 0.5);
+}
+/* end account setting section */

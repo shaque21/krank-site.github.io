@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 991px) {
     .menu-list .navbar-light{
         background-color: #fff !important;
@@ -6,6 +7,7 @@
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
     }
+    
 }
 @media screen and (max-width: 768px) {
     
@@ -23,6 +25,12 @@
         justify-content: center;
         align-items: center;
     }
+    /* .account-section .sidebar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    } */
 }
 @media screen and (max-width: 576px) {
     #product-details .product-content-section .size-btn-div{
