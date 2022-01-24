@@ -1112,12 +1112,29 @@ html{
 .account-section .account-setting .modal .modal-body .pas-div{
     position: relative;
 }
-.account-section .account-setting .modal .modal-body .pas-div .passIcon{
+#toggle{
     color: rgba(30, 39, 46, 0.5) !important;
-    position: absolute !important;
-    top: 50% !important;
-    right: 5% !important;
-    z-index: 1 !important;
-    transform: translateY(-50%) !important;
+    position: absolute ;
+    top: 50% ;
+    right: 5% ;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url(../images/eyeIcon/show.png);
+    background-size: cover;
+    z-index: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#toggle .hide{
+    color: rgba(30, 39, 46, 0.5) !important;
+    position: absolute ;
+    top: 50% ;
+    right: 5% ;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: url(../images/eyeIcon/hide.png);
+    background-size: cover;
+    z-index: 1;
+    transform: translateY(-50%);
     cursor: pointer;
 }

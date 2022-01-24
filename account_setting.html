@@ -168,27 +168,21 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="pas-div">
-                                        <div class="passIcon"  onclick="myFunction()">
-                                            <i class="fas fa-eye" style="color: rgba(30, 39, 46, 0.5) !important;"></i>
-                                        </div>
+                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
                                         <div class="form-floating my-3">
                                             <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">Current Password</label>
                                         </div>
                                     </div>
                                     <div class="pas-div">
-                                        <div class="passIcon">
-                                            <i class="fas fa-eye" style="color: rgba(30, 39, 46, 0.5) !important;"></i>
-                                        </div>
+                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
                                         <div class="form-floating my-3">
                                             <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">New Password</label>
                                         </div>
                                     </div>
                                     <div class="pas-div">
-                                        <div class="passIcon">
-                                            <i class="fas fa-eye" style="color: rgba(30, 39, 46, 0.5) !important;"></i>
-                                        </div>
+                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
                                         <div class="form-floating my-3">
                                             <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">Confirm Password</label>
@@ -514,5 +508,19 @@
     <script src="./plugin/js/bootstrap-number-input.js"></script>
     <!-- custom js file -->
     <script src="./js/main.js"></script>
+    <script type="text/javascript">
+        
+        function myFunction() {
+            const showHide = document.getElementById('toggle');
+            var x = document.querySelector(".password");
+            if (x.type === "password") {
+            x.type = "text";
+            showHide.classList.add('hide'); 
+            } else {
+            x.type = "password";
+            showHide.classList.remove('hide');
+            }
+        }
+    </script>
 </body>
 </html>
