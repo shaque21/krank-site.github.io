@@ -1020,11 +1020,92 @@ html{
     font-weight: 600;
     border-style: none;
 }
-.order-section .order-info .table{
-    line-height: 0.1rem;
+/* .order-section .order-info .table{
+    line-height: 0.5rem;
+} */
+.order-section .order-info .table>:not(caption)>*>*{
+    padding: 0.1rem 0.5rem;
 }
 .order-section .delivary-info h2{
     color: #1E272E;
     font-size: 0.875rem;
     font-weight: 600;
+}
+.order-section .delivary-info .name-phone{
+    line-height: 0.85rem;
+}
+.order-section .delivary-info .name-phone h4{
+    color: rgba(30, 39, 46, 0.45);
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+.order-section .delivary-info .name-phone p{
+    color: rgba(30, 39, 46, 0.45);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.order-section .delivary-info .d-home-btn {
+    padding: 0.25rem 0.5rem;
+    background-color: #c12121;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.order-section .delivary-info .address p{
+    color: rgba(30, 39, 46, 0.5);
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.order-section .order-details .cart-photo{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgba(30, 39, 46, 0.05);
+    overflow: hidden;
+}
+.order-section .order-details .cart-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.order-section .order-details .cart-ptitle{
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1E272E;
+}
+.order-section .order-details .cart-psize{
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: rgba(30, 39, 46, 0.5);
+}
+.order-section .order-details .line{
+    line-height: 0.1rem;
+}
+.order-section .order-details .cart-review-btn{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #C12121;
+}
+.order-section .order-details .table>:not(caption)>*>*{
+    padding: 0.2rem 0.5rem;
+}
+.order-section .order-details .table tbody tr td{
+    border-style: none;
+}
+.order-section .order-details .sub-total{
+    text-align: right;
+    line-height: 0.2rem;
+}
+.order-section .order-details .item{
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: rgba(30, 39, 46, 0.45);
+}
+.order-section .order-details .price{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #1E272E;
+}
+.order-section .order-details .line{
+    line-height: .5rem;
 }
