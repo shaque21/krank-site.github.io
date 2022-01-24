@@ -25,17 +25,49 @@
         justify-content: center;
         align-items: center;
     }
-    /* .account-section .sidebar{
+    .account-section .sidebar .account-setting{
+        width: 90%;
+        text-align: center;
+    }
+    .account-section .sidebar .account-setting i{
+        color: #fff !important;
+    }
+    .account-section .sidebar .account-setting{
+        border-bottom: none;
+        background-color: #c12121;
+        color: #fff !important;
+        margin: 0.5rem 0;
+        padding: 0.5rem 3rem;
+    }
+    .account-section .sidebar .account-setting a{
+        border-bottom: none;
+        background-color: #c12121;
+        color: #fff !important;
+    }
+    .account-section .sidebar{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-    } */
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 576px) {
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
         justify-content: space-around;
+    }
+    .account-section .sidebar .account-setting{
+        border-bottom: none;
+        background-color: #c12121;
+        color: #fff !important;
+        margin: 0.5rem 0;
+        padding: 0.5rem 3rem;
+    }
+    .account-section .sidebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 480px) {
@@ -45,6 +77,19 @@
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
         justify-content: space-around;
+    }
+    .account-section .sidebar .account-setting a{
+        border-bottom: none;
+        background-color: #c12121;
+        color: #fff !important;
+        margin: 0.5rem 0;
+        padding: 0.5rem 3rem;
+    }
+    .account-section .sidebar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .footer-section .terms-link a{
         margin: 0 0.75rem;

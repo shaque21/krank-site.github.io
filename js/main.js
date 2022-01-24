@@ -47,5 +47,13 @@ $(function(){
 $('.qty-input').bootstrapNumber();
 // end product details page
 
+// country number input
+
+// $("").intlTelInput({
+//     allowDropdown:true,
+// });
+// var input = document.querySelector(".telephone");   window.intlTelInput(input);
+// $(".telephone").countrySelect();
+
 
 

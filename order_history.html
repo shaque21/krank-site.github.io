@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krank Ecommerce Site</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/x-icon" href="./images/Logo/For post full sleeve LZ.png">
+    <!-- bootstarp file -->
+    <link rel="stylesheet" href="./bootstarp/bootstrap.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- country number css -->
+    <!-- <link rel="stylesheet" href="./plugin/css/countrySelect.css"> -->
+    <!-- basic css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- offer products css file -->
+    <link rel="stylesheet" href="./css/offer_product.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- header and menu section -->
+    <section id="header" class="container-fluid bg-white fixed-top py-md-3 py-4">
+        <div class="container">
+            <!-- Upper search box and logo -->
+            <div class="logo-section row py-2 bg-white">
+                <div class="logo col-3 d-flex align-items-center">
+                    <div class="logo-fit">
+                        <a href="index.html">
+                            <img src="./images/Logo/black_krank.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="search-btn col-6">
+                    <form class="search-icon">
+                        <input class="form-control form-control-sm  custom-search" placeholder="Search for Products" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+                <div class="shopping-icon col-3 d-flex justify-content-end align-items-center">
+                    <div class="fav mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="#">
+                            <i class="far fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="shop mx-sm-2 mx-2">
+                        <div class="icon-alert"></div>
+                        <a href="cart.html">
+                            <i class="bi bi-cart"></i>
+                        </a>
+                    </div>
+                    <div class="user mx-sm-2 mx-2">
+                        <a href="account_setting.html">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Menu items -->
+            <div class="menu-section row py-2 py-sm-2 py-md-2 white">
+                <div class="col-5 col-sm-4 col-md-3 p-0 m-0 category-bar">
+                    <div class="dropdown">
+                        <button class="btn category-btn dropdown-toggle d-flex justify-content-between align-items-center px-1 px-sm-3"
+                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                          aria-expanded="false" onclick="changeBarIcon(this);">
+                            <i class="fas fa-bars"></i>
+                            All Categories
+                            <i class="fas fa-angle-down me-2"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Full Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Half Sleeve Tee</a></li>
+                          <li><a onclick="changeBarIcon(this);" class="dropdown-item" href="#">Flag</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-7 col-sm-8 col-md-9 p-0 m-0 menu-list d-flex justify-content-end align-items-center">
+                    <nav class="navbar nav-menu navbar-expand-lg navbar-light bg-menu-color d-flex justify-content-end align-items-center p-md-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#all-menu-item" aria-controls="navbarSupportedContent"
+                          aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-bars" data-bs-toggle="collapse"
+                            data-bs-target="#all-menu-item" onclick="changeIcon(this)"
+                            ></i>
+                        </span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse ps-3 ps-sm-3 ps-md-3" id="all-menu-item">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="offer_products.html">Offer Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Feature Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Official Marches</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Track Order</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header section -->
+
+    <!-- banner section -->
+    <section id="banner" class="container-fluid container-fluid banner-section py-3">
+        <div class="container mt-5 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="menu-title">Account</h2>
+            <p class="menu-link">Home &nbsp;
+                <span><i class="fas fa-angle-right"></i></span>
+                &nbsp; Account
+            </p>
+        </div>
+    </section>
+    <!-- end banner section -->
+
+    <!-- Account section -->
+    <section id="account" class="container-fluid bg-white container-fluid account-section my-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  sidebar pe-md-5 py-4 pe-2">
+                    <div class="name_email my-3">
+                        <h4>Vincent Oliver</h4>
+                        <p>example@email.com</p>
+                    </div>
+                    <div class="account-setting py-2">
+                        <a href="account_setting.html" class="active">
+                            <i class="far fa-user me-2"></i> 
+                            Account Setting
+                        </a>
+                    </div>
+                    <div class="account-setting py-2">
+                        <a href="order_history.html">
+                            <i class="fas fa-history me-2"></i> 
+                            Order History
+                        </a>
+                    </div>
+                    <div class="account-setting py-2">
+                        <a href="#">
+                            <i class="fas fa-unlock-alt me-2"></i> 
+                            Change Password
+                        </a>
+                    </div>
+                    <div class="account-setting py-2">
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt me-2"></i> 
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8  address-section py-4">
+                    <div class="row form-section">
+                        <h2>Order History</h2>
+                    </div>
+                    <div class="row order-section d-flex flex-wrap py-4">
+                        <div class="col-sm-6 my-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="title">
+                                                <h4>
+                                                    ORDER #21412
+                                                </h4>  
+                                            </div>
+                                            <div class="delivered-btn">
+                                                <button type="button" class="btn d-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Delivered
+                                                </button>
+                                            </div>
+                                            <!-- modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title head-title" id="exampleModalLabel">Add Address</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="save-btn pt-3">
+                                                            <button type="submit" class="btn">Save</button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 date-time">
+                                            <p>Placed On &nbsp; : &nbsp; 23th of January</p>
+                                            <p>Amount &nbsp; : &nbsp; BDT. 250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="title">
+                                                <h4>ORDER #21412</h4>  
+                                            </div>
+                                            <div class="canceled-btn">
+                                                <button type="button" class="btn c-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Canceled
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 date-time">
+                                            <p>Placed On &nbsp; : &nbsp; 23th of January</p>
+                                            <p>Amount &nbsp; : &nbsp; BDT. 250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="title">
+                                                <h4>ORDER #21412</h4>  
+                                            </div>
+                                            <div class="pending-btn">
+                                                <button type="button" class="btn p-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Pending
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 date-time">
+                                            <p>Placed On &nbsp; : &nbsp; 23th of January</p>
+                                            <p>Amount &nbsp; : &nbsp; BDT. 250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="title">
+                                                <h4>ORDER #21412</h4>  
+                                            </div>
+                                            <div class="approved-btn">
+                                                <button type="button" class="btn a-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Approved
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 date-time">
+                                            <p>Placed On &nbsp; : &nbsp; 23th of January</p>
+                                            <p>Amount &nbsp; : &nbsp; BDT. 250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 my-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="title">
+                                                <h4>ORDER #21412</h4>  
+                                            </div>
+                                            <div class="shipped-btn">
+                                                <button type="button" class="btn s-btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Shipped
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 date-time">
+                                            <p>Placed On &nbsp; : &nbsp; 23th of January</p>
+                                            <p>Amount &nbsp; : &nbsp; BDT. 250</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Account section -->
+    <!-- Footer Section -->
+    <footer class="footer-section container-fluid pt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-12 offset-sm-4 d-flex justify-content-center align-items-center py-2">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="./images/Logo/black_krank.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="terms-link col-sm-8 col-12 offset-sm-2 d-flex justify-content-center align-items-center py-2">
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="social-icon col-sm-8 col-12 offset-sm-2 d-flex justify-content-center align-items-center py-2">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <hr class="mt-4 mb-3 col-sm-6 col-12 offset-sm-3 ">
+            </div>
+            <div class="row">
+                <div class="footer-bottom col-sm-4 col-12 offset-sm-4 d-flex justify-content-center align-items-center pb-2">
+                    <p>© 2021 Krank. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer section -->
+    <!-- jquery cdn file -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- country number js file -->
+    <!-- <script src="./plugin/js/countrySelect.js"></script> -->
+    <!-- bootstrap js file -->
+    <script src="./bootstarp/bootstrap.bundle.min.js"></script>
+    
+    <!-- zoomsl js file -->
+    <script src="./plugin/js/zoomsl.min.js"></script>
+    <!-- number js -->
+    <script src="./plugin/js/bootstrap-number-input.js"></script>
+    <!-- custom js file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

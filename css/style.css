@@ -729,6 +729,9 @@ html{
     border-bottom: 1px solid rgba(30, 39, 46, 0.1);
 
 }
+.account-section .sidebar .account-setting .active{
+    color: #c12121;
+}
 .account-section .sidebar .account-setting a{
     color: #1E272E;
     font-size: 0.875rem;
@@ -754,6 +757,23 @@ html{
     font-weight: bold;
     border-radius: 0;
     border: 1px solid #c12121;
+}
+.account-section .address-section .add-section .head-title{
+    color: #1E272E;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.account-section .address-section .add-section .home-modal-btn button i{
+    color: #c12121;
+}
+.account-section .address-section .add-section .home-modal-btn button{
+    background-color: rgba(193, 33, 33, 0.1);
+    padding: 0.35rem 1rem;
+    border: 1px solid rgba(30, 39, 46, 0.15);
+    border-radius: 2px;
+    color: #1E272E;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 .account-section .address-section .add-section .head h2{
     font-size: 1.125rem;
@@ -799,4 +819,138 @@ html{
     box-shadow: none;
     border-color: rgba(30, 39, 46, 0.5);
 }
+.account-section .address-section .add-section .home-adrs h4{
+    color: #1E272E;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.account-section .address-section .add-section .home-adrs h4 i{
+    color: #c12121;
+}
+.account-section .address-section .add-section .home-adrs .edit-btn button:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.account-section .address-section .add-section .home-adrs .edit-btn button i{
+    color: #1E272E;
+    transform: translateY(-0.35rem);
+}
+.account-section .address-section .add-section .home-adrs .name-phone{
+    line-height: 0.5rem;
+}
+.account-section .address-section .add-section .home-adrs .name-phone h4{
+    color: #1E272E;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+.account-section .address-section .add-section .home-adrs .name-phone p{
+    color: rgba(30, 39, 46, 0.45);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.account-section .address-section .add-section .home-adrs .address{
+    color: rgba(30, 39, 46, 0.5);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
 /* end account setting section */
+.custom-select .form-floating>.form-control, .form-floating>.form-select {
+    height: calc(2.5rem + 1rem) !important;
+    line-height: 1.25;
+    border-radius: 0 !important;
+}
+.custom-select .form-floating>.form-control, .form-floating>.form-select:focus{
+    box-shadow: none;
+    border-color: rgba(30, 39, 46, 0.5);
+} 
+.custom-select .form-control{
+    color: #1E272E;
+    font-weight: 600;
+    font-size: 0.875rem !important;
+    padding: 0.75rem !important;
+    border-radius: 0;
+}
+.custom-select .custom-option:hover{
+    box-shadow: none;
+    background-color: #c12121 !important;
+    color: #fff !important;
+}
+.account-section .address-section .save-btn button{
+    padding: 0.35rem 1.5rem;
+    color: #fff;
+    background-color: #c12121;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 1px solid #c12121;
+}
+/* oder history */
+
+.order-section .title h4{
+    color: #1E272E;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.order-section .delivered-btn .d-btn{
+    padding: 0.25rem 1.2rem;
+    background-color: #2ECC71;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.order-section .delivered-btn .d-btn:focus{
+    box-shadow: none;
+}
+.order-section .canceled-btn .c-btn{
+    padding: 0.25rem 1.2rem;
+    background-color: #FF5E57;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.order-section .canceled-btn .c-btn:focus{
+    box-shadow: none;
+}
+.order-section .pending-btn .p-btn{
+    padding: 0.25rem 1.2rem;
+    background-color: #C12121;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.order-section .pending-btn .p-btn:focus{
+    box-shadow: none;
+}
+.order-section .approved-btn .a-btn{
+    padding: 0.25rem 1.2rem;
+    background-color: rgba(193, 33, 33, 0.6);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.order-section .approved-btn .a-btn:focus{
+    box-shadow: none;
+}
+.order-section .shipped-btn .s-btn{
+    padding: 0.25rem 1.2rem;
+    background-color: rgba(193, 33, 33, 0.3);
+    color: #1E272E;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.order-section .shipped-btn .s-btn:focus{
+    box-shadow: none;
+}
+.order-section .date-time{
+    line-height: 0.4rem;
+}
+.order-section .date-time p{
+    color: rgba(30, 39, 46, 0.5);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
