@@ -1109,3 +1109,15 @@ html{
 .order-section .order-details .line{
     line-height: .5rem;
 }
+.account-section .account-setting .modal .modal-body .pas-div{
+    position: relative;
+}
+.account-section .account-setting .modal .modal-body .pas-div .passIcon{
+    color: rgba(30, 39, 46, 0.5) !important;
+    position: absolute !important;
+    top: 50% !important;
+    right: 5% !important;
+    z-index: 1 !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer;
+}

@@ -54,6 +54,23 @@ $('.qty-input').bootstrapNumber();
 // });
 // var input = document.querySelector(".telephone");   window.intlTelInput(input);
 // $(".telephone").countrySelect();
+// $(".password").password('toggle');
+var show = document.querySelector('.fa-eye');
+function myFunction() {
+    var x = document.querySelector(".password");
+    if (x.type === "password") {
+      x.type = "text";
+      show.classList.add('.fa-eye-slash');
+    } else {
+      x.type = "password";
+      show.classList.add('.fa-eye');
+    }
+}
+
+function myFunction(){
+    var x = $('.password').val();
+    console.log(x);
+}
 
 
 
