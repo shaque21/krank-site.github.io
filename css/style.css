@@ -1112,26 +1112,42 @@ html{
 .account-section .account-setting .modal .modal-body .pas-div{
     position: relative;
 }
-#toggle{
+.account-section .account-setting .modal-head-title{
+    color: #1E272E;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.account-section .account-setting .changePassword-modal .save-btn button{
+    padding: 0.35rem 1.5rem;
+    color: #fff;
+    background-color: #c12121;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 0;
+    border: 1px solid #c12121;
+}
+#toggle1,#toggle2,#toggle3{
     color: rgba(30, 39, 46, 0.5) !important;
     position: absolute ;
     top: 50% ;
     right: 5% ;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.125rem;
+    width: 1.125rem;
     background: url(../images/eyeIcon/show.png);
     background-size: cover;
     z-index: 1;
     transform: translateY(-50%);
     cursor: pointer;
 }
-#toggle .hide{
+#toggle1.hide1,
+#toggle2.hide2,
+#toggle3.hide3{
     color: rgba(30, 39, 46, 0.5) !important;
     position: absolute ;
     top: 50% ;
     right: 5% ;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.125rem;
+    width: 1.125rem;
     background: url(../images/eyeIcon/hide.png);
     background-size: cover;
     z-index: 1;

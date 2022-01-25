@@ -49,6 +49,39 @@ $('.qty-input').bootstrapNumber();
 // end product details page
 
 
+function myFunction() {
+    var showHide = document.getElementById('toggle1');
+    var x = document.querySelector(".current-password");
+    if (x.type === "password") {
+    x.type = "text";
+    showHide.classList.add('hide1'); 
+    } else {
+    x.type = "password";
+    showHide.classList.remove('hide1');
+    }
+}
+function newPass(){
+    var showHide = document.getElementById('toggle2');
+    var x = document.querySelector(".new-password");
+    if (x.type === "password") {
+    x.type = "text";
+    showHide.classList.add('hide2'); 
+    } else {
+    x.type = "password";
+    showHide.classList.remove('hide2');
+    }
+}
+function confirmPass(){
+    var showHide = document.getElementById('toggle3');
+    var x = document.querySelector(".confirm-password");
+    if (x.type === "password") {
+    x.type = "text";
+    showHide.classList.add('hide3'); 
+    } else {
+    x.type = "password";
+    showHide.classList.remove('hide3');
+    }
+}
 
 
 

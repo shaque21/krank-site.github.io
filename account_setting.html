@@ -159,32 +159,32 @@
                             <i class="fas fa-unlock-alt me-2"></i> 
                             Change Password
                         </a>
-                        <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModal" aria-hidden="true">
+                        <div class="modal fade changePassword-modal" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModal" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title head-title" id="exampleModalLabel">Change Password</h5>
+                                    <h5 class="modal-title modal-head-title" id="exampleModalLabel">Change Password</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="pas-div">
-                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
+                                        <div id="toggle1" class="passIcon" onclick="myFunction();"></div>
                                         <div class="form-floating my-3">
-                                            <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
+                                            <input type="password" class="form-control current-password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">Current Password</label>
                                         </div>
                                     </div>
                                     <div class="pas-div">
-                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
+                                        <div id="toggle2" class="passIcon" onclick="newPass();"></div>
                                         <div class="form-floating my-3">
-                                            <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
+                                            <input type="password" class="form-control new-password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">New Password</label>
                                         </div>
                                     </div>
                                     <div class="pas-div">
-                                        <div id="toggle" class="passIcon" onclick="myFunction();"></div>
+                                        <div id="toggle3" class="passIcon" onclick="confirmPass();"></div>
                                         <div class="form-floating my-3">
-                                            <input type="password" class="form-control password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
+                                            <input type="password" class="form-control confirm-password" data-bs-toggle="password" id="floatingInput" placeholder="name@example.com">
                                             <label for="floatingInput">Confirm Password</label>
                                         </div>
                                     </div>
@@ -508,19 +508,5 @@
     <script src="./plugin/js/bootstrap-number-input.js"></script>
     <!-- custom js file -->
     <script src="./js/main.js"></script>
-    <script type="text/javascript">
-        
-        function myFunction() {
-            const showHide = document.getElementById('toggle');
-            var x = document.querySelector(".password");
-            if (x.type === "password") {
-            x.type = "text";
-            showHide.classList.add('hide'); 
-            } else {
-            x.type = "password";
-            showHide.classList.remove('hide');
-            }
-        }
-    </script>
 </body>
 </html>
