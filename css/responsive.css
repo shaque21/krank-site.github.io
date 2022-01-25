@@ -52,6 +52,11 @@
     }
 }
 @media screen and (max-width: 576px) {
+    /* .fav a img{
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+    } */
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
         justify-content: space-around;
