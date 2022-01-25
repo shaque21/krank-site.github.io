@@ -37,7 +37,7 @@
         background-color: #c12121;
         color: #fff !important;
         margin: 0.5rem 0;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 1rem;
     }
     .account-section .sidebar .account-setting a{
         border-bottom: none;
@@ -61,7 +61,7 @@
         background-color: #c12121;
         color: #fff !important;
         margin: 0.5rem 0;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 1rem;
     }
     .account-section .sidebar{
         display: flex;
@@ -83,7 +83,7 @@
         background-color: #c12121;
         color: #fff !important;
         margin: 0.5rem 0;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 1rem;
     }
     .account-section .sidebar{
         display: flex;
