@@ -1,5 +1,20 @@
-
+@media screen and (max-width: 1199px) {
+    .photo img{
+        height: 90%;
+        width:90%;
+        object-fit: contain;
+        transition: all 0.4s linear;
+        cursor: pointer; 
+    } 
+}
 @media screen and (max-width: 991px) {
+    .photo img{
+        height: 90%;
+        width:90%;
+        object-fit: contain;
+        transition: all 0.4s linear;
+        cursor: pointer; 
+    }
     .menu-list .navbar-light{
         background-color: #fff !important;
         box-shadow: 0px 2px 5px rgba(30, 39, 46, 0.05) ; 
@@ -10,7 +25,13 @@
     
 }
 @media screen and (max-width: 768px) {
-    
+    .photo img{
+        height: 96%;
+        width:96%;
+        object-fit: contain;
+        transition: all 0.4s linear;
+        cursor: pointer; 
+    }
     .category-bar .dropdown .fa-bars {
         margin-left: 0.625rem;
     }
@@ -52,11 +73,13 @@
     }
 }
 @media screen and (max-width: 576px) {
-    /* .fav a img{
-        height: 80%;
-        width: 80%;
+    .photo img{
+        height: 90%;
+        width:90%;
         object-fit: contain;
-    } */
+        transition: all 0.4s linear;
+        cursor: pointer; 
+    }
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
         justify-content: space-around;
@@ -79,6 +102,7 @@
     html{
        font-size: 80% !important; 
     }
+    
     #product-details .product-content-section .size-btn-div{
         font-size: 0.3rem;
         justify-content: space-around;

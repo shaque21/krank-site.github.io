@@ -276,6 +276,7 @@ html{
     background-color: #1E272E;
     border-radius: 3px;
 }
+
 #products .card .photo .wishIcon{
     position: absolute;
     top: 6%;
@@ -347,6 +348,7 @@ html{
 #products .card:hover{
     box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.219),
                 2px 2px 5px rgba(30, 39, 46, 0.2);
+    
 }
 #products .card:hover .addBtnDiv{
     opacity: 1;
@@ -354,7 +356,7 @@ html{
 }
 .photo{
     position: relative;
-    height: 12.125rem;
+    height: 12rem;
     width: 100%;
     background-color: rgba(30, 39, 46, 0.05);
     overflow: hidden;
@@ -364,8 +366,8 @@ html{
 }
 
 .photo img{
-    height: 90%;
-    width:90%;
+    height: 100%;
+    width:100%;
     object-fit: contain;
     transition: all 0.4s linear;
     cursor: pointer; 
